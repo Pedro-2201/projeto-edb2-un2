@@ -34,4 +34,11 @@ public class Produto {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+
+    public boolean equals(Produto produto){
+        return produto.getCodigo() == this.codigo;
+    }
+    public boolean equals(int codigo){
+        return codigo == this.codigo;
+    }
 }
